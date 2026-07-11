@@ -1,0 +1,65 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+site_url: https://twentyonevietnam.com
+display_url: https://twentyonevietnam.com
+logo_url: /images/favicon.svg
+
+locale: "vi"
+
+collections:
+  - name: "site"
+    label: "Nội dung Website"
+    files:
+      - file: "content/site.json"
+        label: "Thông tin chung"
+        name: "site"
+        fields:
+          - label: "Thông tin liên hệ"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Số điện thoại", name: "phone", widget: "string" }
+              - { label: "Địa chỉ", name: "address", widget: "string" }
+              - { label: "Website (hiển thị)", name: "website", widget: "string" }
+
+          - label: "Hero — Trang chủ"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Câu mô tả phụ (dưới tiêu đề lớn)", name: "subtitle", widget: "text" }
+
+          - label: "Số liệu thống kê"
+            name: "stats"
+            widget: "object"
+            fields:
+              - { label: "Số deal chốt thành công (chỉ số, VD: 500)", name: "deals_closed", widget: "string" }
+              - { label: "Số doanh nghiệp tin dùng (VD: 50)", name: "businesses", widget: "string" }
+              - { label: "Hệ số tăng tỷ lệ chốt deal (VD: 3.2)", name: "conversion_multiplier", widget: "string" }
+              - { label: "Phần trăm hài lòng (VD: 98)", name: "satisfaction", widget: "string" }
+
+          - label: "Doanh nghiệp tin dùng (logo chữ)"
+            name: "trusted_by"
+            widget: "list"
+
+          - label: "Đánh giá khách hàng (Testimonials)"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Nội dung đánh giá", name: "quote", widget: "text" }
+              - { label: "Tên người đánh giá", name: "name", widget: "string" }
+              - { label: "Chức danh · Công ty", name: "role", widget: "string" }
+
+          - label: "Bảng giá — Gói Sàn Môi giới"
+            name: "pricing"
+            widget: "object"
+            fields:
+              - { label: "Tên gói", name: "plan_name", widget: "string" }
+              - { label: "Giá (VD: 5.9tr)", name: "price", widget: "string" }
+              - { label: "Đơn vị giá (VD: / tháng)", name: "price_unit", widget: "string" }
+              - { label: "Ghi chú giá", name: "price_note", widget: "string" }

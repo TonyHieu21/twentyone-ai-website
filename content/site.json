@@ -1,0 +1,48 @@
+{
+  "contact": {
+    "email": "hieu@twentyonevietnam.com",
+    "phone": "+84 90 000 0000",
+    "address": "Ho Chi Minh City, Vietnam",
+    "website": "twentyonevietnam.com"
+  },
+  "hero": {
+    "subtitle": "Tự động hóa quy trình bán hàng, phân tích dữ liệu thị trường theo thời gian thực và tăng tỷ lệ chốt deal — tất cả trong một nền tảng duy nhất."
+  },
+  "stats": {
+    "deals_closed": "500",
+    "businesses": "50",
+    "conversion_multiplier": "3.2",
+    "satisfaction": "98"
+  },
+  "trusted_by": [
+    "SOLARA GROUP",
+    "VIETCORE LAND",
+    "GOLDSTAR REALTY",
+    "PHÚ THỊNH LAND",
+    "MERIDIAN GROUP",
+    "KIM CƯƠNG LAND"
+  ],
+  "testimonials": [
+    {
+      "quote": "Sau 3 tháng dùng Twentyone AI, tỷ lệ chốt deal của đội chúng tôi tăng từ 8% lên 27%. Đây là bước ngoặt thực sự cho sàn môi giới của chúng tôi.",
+      "name": "Trần Minh Tuấn",
+      "role": "Giám đốc kinh doanh · Sàn BĐS Sao Việt"
+    },
+    {
+      "quote": "Market Intelligence của Twentyone giúp chúng tôi luôn đi trước thị trường. Dữ liệu giá realtime cực kỳ chính xác, giúp tư vấn khách hàng tự tin hơn nhiều.",
+      "name": "Lê Thị Hương",
+      "role": "CEO · Công ty TNHH BĐS Ánh Dương"
+    },
+    {
+      "quote": "AI Chatbot xử lý 80% câu hỏi của khách hàng 24/7. Đội sales giờ chỉ cần tập trung vào những cuộc gặp quan trọng. Năng suất tăng vọt.",
+      "name": "Nguyễn Hoàng Nam",
+      "role": "Trưởng phòng Sales · Tập đoàn Địa ốc Xanh"
+    }
+  ],
+  "pricing": {
+    "plan_name": "GÓI SÀN MÔI GIỚI",
+    "price": "5.9tr",
+    "price_unit": "/ tháng",
+    "price_note": "Bắt đầu từ 5 người dùng"
+  }
+}
