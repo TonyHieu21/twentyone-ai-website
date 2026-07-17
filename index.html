@@ -7,6 +7,7 @@
 <meta name="description" content="Twentyone AI là nền tảng AI đầu tiên dành riêng cho doanh nghiệp bất động sản Việt Nam. Tự động hóa quy trình, phân tích thị trường, tăng tỷ lệ chốt deal.">
 <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 <link rel="stylesheet" href="css/style.css">
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 
@@ -330,5 +331,16 @@
 <script src="js/content-loader.js"></script>
 <script src="js/main.js"></script>
 <script src="js/particles.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>
