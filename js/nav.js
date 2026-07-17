@@ -27,8 +27,7 @@ const NAV_HTML = `
         <li><a href="ve-chung-toi.html">Về chúng tôi</a></li>
       </ul>
       <div class="nav__cta">
-        <a href="#" class="btn-ghost">Đăng nhập</a>
-        <a href="#contact" class="btn btn-gold">Dùng thử miễn phí</a>
+        <a href="ve-chung-toi.html#contact" class="btn btn-gold">Dùng thử miễn phí</a>
       </div>
       <button class="nav__hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -42,7 +41,7 @@ const NAV_HTML = `
   <a href="giai-phap.html">Giải pháp</a>
   <a href="khach-hang.html">Khách hàng</a>
   <a href="ve-chung-toi.html">Về chúng tôi</a>
-  <a href="#contact" class="btn btn-gold btn-lg" style="margin-top:16px">Dùng thử miễn phí</a>
+  <a href="ve-chung-toi.html#contact" class="btn btn-gold btn-lg" style="margin-top:16px">Dùng thử miễn phí</a>
 </div>`;
 
 const FOOTER_HTML = `
