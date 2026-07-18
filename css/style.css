@@ -550,3 +550,37 @@ p { font-family: 'DM Sans', sans-serif; }
 .flex-center { display: flex; align-items: center; justify-content: center; }
 .flex-between { display: flex; align-items: center; justify-content: space-between; }
 .flex-wrap { flex-wrap: wrap; }
+
+/* ── TER App CTA (Module 06) ── */
+.ter-cta-btn {
+  position: relative;
+  display: inline-flex; align-items: center; gap: 12px;
+  background: linear-gradient(135deg, #818CF8, #6366F1 45%, #22D3EE);
+  background-size: 200% 200%;
+  color: #fff; font-family: 'Space Grotesk', sans-serif;
+  font-size: 16px; font-weight: 700;
+  padding: 18px 36px; border-radius: 16px;
+  box-shadow: 0 18px 44px rgba(99,102,241,0.45);
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-position 0.5s ease;
+  animation: ter-btn-gradient 4s ease infinite;
+}
+.ter-cta-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 24px 56px rgba(99,102,241,0.65), 0 0 0 4px rgba(99,102,241,0.15);
+  color: #fff;
+}
+.ter-cta-btn__glow {
+  position: absolute; inset: -3px; border-radius: 18px;
+  background: linear-gradient(135deg, #818CF8, #22D3EE);
+  z-index: -1; opacity: 0.6; filter: blur(14px);
+  animation: ter-btn-pulse 2.4s ease-in-out infinite;
+}
+@keyframes ter-btn-pulse {
+  0%, 100% { opacity: 0.45; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.06); }
+}
+@keyframes ter-btn-gradient {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
